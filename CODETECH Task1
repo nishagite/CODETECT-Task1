@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Variables to store user's score
+    int score = 0;
+    int userAnswer;
+
+    // Question 1
+    cout << "Question 1: What is the capital of France?\n";
+    cout << "1. Berlin\n2. Madrid\n3. Paris\n4. Rome\n";
+    cout << "Enter the number of your answer: ";
+    cin >> userAnswer;
+    if (userAnswer == 3) {
+        cout << "Correct!\n\n";
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 3. Paris.\n\n";
+    }
+
+    // Question 2
+    cout << "Question 2: Which planet is known as the Red Planet?\n";
+    cout << "1. Earth\n2. Mars\n3. Jupiter\n4. Venus\n";
+    cout << "Enter the number of your answer: ";
+    cin >> userAnswer;
+    if (userAnswer == 2) {
+        cout << "Correct!\n\n";
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 2. Mars.\n\n";
+    }
+
+    // Question 3
+    cout << "Question 3: Who wrote 'Hamlet'?\n";
+    cout << "1. Charles Dickens\n2. Leo Tolstoy\n3. William Shakespeare\n4. Mark Twain\n";
+    cout << "Enter the number of your answer: ";
+    cin >> userAnswer;
+    if (userAnswer == 3) {
+        cout << "Correct!\n\n";
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 3. William Shakespeare.\n\n";
+    }
+
+    // Display the user's final score
+    cout << "Quiz over! You scored " << score << " out of 3.\n";
+
+    return 0;
+}
